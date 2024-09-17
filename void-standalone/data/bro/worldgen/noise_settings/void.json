@@ -5,10 +5,10 @@
   "ore_veins_enabled": false,
   "legacy_random_source": false,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "minecraft:black_concrete"
   },
   "default_fluid": {
-    "Name": "minecraft:black_concrete"
+    "Name": "minecraft:air"
   },
   "noise": {
     "min_y": 0,
@@ -118,8 +118,8 @@
                           "argument1": {
                             "type": "minecraft:range_choice",
                             "input": "bro:void/sloped_cheese",
-                            "min_inclusive": -1000000,
-                            "max_exclusive": 1.5625,
+                            "min_inclusive": -10,
+                            "max_exclusive": 4.5625,
                             "when_in_range": {
                               "type": "minecraft:min",
                               "argument1": "bro:void/sloped_cheese",
@@ -139,13 +139,13 @@
                                     "type": "minecraft:add",
                                     "argument1": {
                                       "type": "minecraft:mul",
-                                      "argument1": 4,
+                                      "argument1": 1,
                                       "argument2": {
                                         "type": "minecraft:square",
                                         "argument": {
                                           "type": "minecraft:noise",
                                           "noise": "minecraft:cave_layer",
-                                          "xz_scale": 1,
+                                          "xz_scale": 4,
                                           "y_scale": 8
                                         }
                                       }
@@ -195,7 +195,7 @@
                                 "type": "minecraft:range_choice",
                                 "input": "minecraft:overworld/caves/pillars",
                                 "min_inclusive": -1000000,
-                                "max_exclusive": 0.03,
+                                "max_exclusive": 1,
                                 "when_in_range": -1000000,
                                 "when_out_of_range": "minecraft:overworld/caves/pillars"
                               }
