@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:mossy_cobblestone",
+        "count": 1
+      },
+      "title": "Hostile Worlds",
+      "description": "Something Strange is happening nearby...",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "bro:invasion/predicate",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "bro:invasion_generic/start/starfall_event_start"
+    }
+  }
+  
